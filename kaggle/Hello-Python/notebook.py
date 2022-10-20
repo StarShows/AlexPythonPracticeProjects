@@ -1,3 +1,6 @@
+from pydoc import describe
+
+
 spam_amount = 0
 print(spam_amount)
 
@@ -40,5 +43,20 @@ print(abs(-32))
 print(float(10))
 print(int(3.8))
 
+number = 19.95
+print(number * 6)
 
-print(int('807') +1 )
+# Describe the type of variable
+def check_type(value):
+    output = type(value)
+    return output
+
+check_type = check_type(number)
+print(check_type)
+
+
+# Prototype methods:
+# Outputs info to the log
+print('Hello Alex')
+# Preform a type check
+type('this is a string') # - string
