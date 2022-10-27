@@ -1,4 +1,12 @@
+# Youtube video learning notes from video:
+# https://www.youtube.com/watch?v=kqtD5dpn9C8
+# Programing with mosh
+
+
 # Number
+import types
+
+
 age = 20
 age = 30
 
@@ -92,3 +100,122 @@ x = 10+3*2
 print(x)
 x = (10+3)*2
 print(x)
+
+# Lesson 5 - Comparison Operators
+# >
+# <
+# <=
+# >=
+# !=
+x = 3 != 2  
+print(x)
+
+# Lesson 6 - logical operators
+price = 25
+# and is the alternate to &&
+print(price > 10 and price < 30)
+
+price = 5
+
+# or opertaor is simular to js || operator
+print(price > 10 or price < 30)
+
+# Not operator (!)
+price = 25
+print(not price > 10)
+# and (both)
+# or (atleast one)
+# not (inverts value)
+
+# Lesson 7 - if statements
+temperature = 27
+
+if temperature > 30:
+    print("It's a hot day today")
+    print("Drink plenty of water")
+elif temperature > 20: # (20, 30)
+    print("It's a nice day")
+elif temperature> 10: #(10, 20]
+    print("It's a bit cold")
+else:
+    print("It's cold")
+
+print("done")
+
+# Exercise
+# Weight converter program
+weight = input("Weight:")
+mesure_unit = input("(K)g or (L)bs")
+if mesure_unit.upper() == "K":
+    print("weight in Lbs is ", float(weight)*0.45359237)
+elif mesure_unit.upper() == "L":
+    print("Your weight in Kg is ",float(weight)/2.2 )
+else:
+    print("Plase enter a valid wight")
+    
+    
+# Lesson 8 - while loops
+print("1")
+print("2")
+print("3")
+print("4")
+print("5")
+
+# While loops
+i = 1;
+while i <= 10:
+    print(i* '*')
+    i = i + 1
+    
+# Lesson 9 - lists
+1
+1.1
+True
+'a'
+# - basic types
+# complex types:
+names = ["John", "bob", "alex","zev","evan"]
+print(names[-1]) # represents last item on list
+
+# complex types:
+names = ["John", "bob", "alex","zev","evan"]
+print(names[-2]) # represents second to last item on list
+# Updated list item value by index
+names[0] = "Jon"
+print(names)
+
+
+# Select range of values
+names = ["John", "bob", "alex","zev","evan"]
+print(names[0:3])
+print(names)
+
+# Lesson 10 - list methods
+# String in python are objects, they have capabilities
+"a".upper();
+numbers = [1,2,3,4,5]
+# Insert number at the end of a list
+numbers.append(6)
+print(numbers)
+
+# Insert number at the middle or beginning
+numbers = [1,2,3,4,5]
+numbers.insert(4,-1)
+print(numbers)
+
+# Remove items 
+numbers = [1,2,8,4,8,8]
+numbers.remove(8)
+print(numbers)
+
+# Remove all items in a list
+numbers = [1,2,8,4,8,8]
+numbers.clear()
+print(numbers)
+
+# Check if an item exists in a list
+numbers = [1,2,8,4,8,8]
+print(10 in numbers)
+
+# Check how many numbers are in a list
+print(len(numbers))
