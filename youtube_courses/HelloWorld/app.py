@@ -1,6 +1,7 @@
 # Youtube video learning notes from video:
 # https://www.youtube.com/watch?v=kqtD5dpn9C8
 # Programing with mosh
+# Alexander Tannenbaum pyhton course notes
 
 
 # Number
@@ -219,3 +220,39 @@ print(10 in numbers)
 
 # Check how many numbers are in a list
 print(len(numbers))
+
+# Lesson 11
+# for loop
+numbers = [1,2,8,4,8,8]
+
+for item in numbers:
+    print(item)
+
+# While loop
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i = i+1
+
+# Lesson 12 - the range() function
+numbers = range(5,10)
+print(numbers)
+for number in numbers:
+    print(number)
+
+# add a step to the range
+numbers = range(5,10,3)
+print(numbers)
+for number in numbers:
+    print(number)
+
+# shorthand
+# numbers = range(5,10,3)
+# print(numbers)
+for number in range(5):
+    print(number)
+
+# Lesson 13 - Tuples
+numbers = (1,2,3, 3)
+numbers[0] = 3
+numbers.count()
